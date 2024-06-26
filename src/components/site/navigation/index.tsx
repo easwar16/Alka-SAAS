@@ -17,9 +17,9 @@ const Navigation = ({ user }: Props) => {
           src={"./assets/plura-logo.svg"}
           width={40}
           height={40}
-          alt={"alkaLogo"}
+          alt="plur logo"
         />
-        <span className="text-xl font-bold">Alka.</span>
+        <span className="text-xl font-bold"> Alka.</span>
       </aside>
       <nav className="hidden md:block absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%]">
         <ul className="flex items-center justify-center gap-8">
@@ -32,7 +32,7 @@ const Navigation = ({ user }: Props) => {
       <aside className="flex gap-2 items-center">
         <Link
           href={"/agency"}
-          className="bg-primary text-white px-4 rounded-md hover:bg-primary/80"
+          className="bg-primary text-white p-2 px-4 rounded-md hover:bg-primary/80"
         >
           Login
         </Link>
