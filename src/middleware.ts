@@ -37,7 +37,7 @@ export default clerkMiddleware((auth, request) => {
     url.pathname === "/" ||
     (url.pathname === "/site" && url.host === process.env.NEXT_PUBLIC_DOMAIN)
   ) {
-    return NextResponse.rewrite(new URL("/site", request.url));
+    return NextResponse.rewrite(new URL(`/site`, request.url));
   }
   if (
     url.pathname.startsWith("/agency") ||
